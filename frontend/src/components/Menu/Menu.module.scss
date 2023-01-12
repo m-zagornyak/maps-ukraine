@@ -1,0 +1,74 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 280px;
+  height: 34px;
+  background-color: royalblue;
+  bottom: 0;
+  border-radius: 8px;
+}
+
+.menu_header {
+  text-align: center;
+  flex-direction: row;
+}
+
+.menu_button_home {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  z-index: 1000;
+  border-radius: 12px;
+  background-color: aqua;
+  margin: 5px;
+}
+
+.menu_button_profile {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.menu_page_title {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.menu_button_chat {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: aqua;
+}
+
+.menu_button_tools {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 28px;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: aqua;
+}
