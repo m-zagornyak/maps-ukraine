@@ -1,74 +1,63 @@
+@import '../../assets/styles/mixins.scss';
+
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  width: 280px;
-  height: 34px;
+  width: 320px;
+  height: 44px;
   background-color: royalblue;
-  bottom: 0;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+
+  &_wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &_header {
+    display: flex;
+  }
+
+  &_page_title {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100px;
+    height: 32px;
+    border-radius: 12px;
+    margin: 5px;
+    background-color: aqua;
+
+    @include noSelect();
+  }
 }
 
-.menu_header {
-  text-align: center;
-  flex-direction: row;
-}
-
-.menu_button_home {
-  display: inline-block;
+.menu_button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 28px;
-  z-index: 1000;
+  width: 32px;
+  height: 32px;
   border-radius: 12px;
   background-color: aqua;
   margin: 5px;
-}
+  
+  &_home {
+    z-index: 1000;
+  }
 
-.menu_button_profile {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 28px;
-  border-radius: 12px;
-  margin: 5px;
-  background-color: aqua;
-}
+  &_profile {
+    
+  }
 
-.menu_page_title {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 30px;
-  border-radius: 12px;
-  margin: 5px;
-  background-color: aqua;
-}
+  &_chat {
+    
+  }
 
-.menu_button_chat {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 28px;
-  border-radius: 12px;
-  margin: 5px;
-  background-color: aqua;
-}
-
-.menu_button_tools {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 28px;
-  border-radius: 12px;
-  margin: 5px;
-  background-color: aqua;
+  &_tools {
+    
+  }
 }

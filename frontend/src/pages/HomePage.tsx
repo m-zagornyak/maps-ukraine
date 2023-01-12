@@ -1,10 +1,11 @@
 import React from "react";
 import { Menu } from "../components/Menu/Menu";
-import {Maps} from "../components/Maps/Maps";
+import { Maps } from "../components/Maps/Maps";
+import styles from './HomePage.module.scss';
 
 export const HomePage = () => {
   return (
-    <div>
+    <div className={styles.home_page_container}>
       <Maps />
       <Menu />
     </div>

@@ -4,6 +4,6 @@ import { CgProfile } from 'react-icons/cg'
 
 export const ProfileIcon = () => {
 	return (
-		<div><CgProfile size={25}/></div>
+		<CgProfile size={20}/>
 	)
 }
