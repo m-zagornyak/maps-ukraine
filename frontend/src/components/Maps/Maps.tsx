@@ -20,7 +20,7 @@ export class Maps extends ComponentWithAm5Root {
     chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
 
     chart.chartContainer.set("background", am5.Rectangle.new(root, {
-      fill: am5.color("rgba(80, 80, 80, 1)"),
+      fill: am5.color("#0f1012"),
       fillOpacity: 1,
     }));
 

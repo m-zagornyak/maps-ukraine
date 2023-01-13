@@ -1,9 +1,9 @@
 import React from "react";
-import { HomeIcon } from "./elements/HomeIcon";
-import { ProfileIcon } from "./elements/ProfileIcon";
+import { HomeIcon } from "../../../assets/icons/svg/HomeIcon";
+import { ProfileIcon } from "../../../assets/icons/svg/ProfileIcon";
 import styles from "./Menu.module.scss";
-import { ChatIcon } from "./elements/ChatIcon";
-import { ToolsIcon } from "./elements/ToolsIcon";
+import { ChatIcon } from "../../../assets/icons/svg/ChatIcon";
+import { ToolsIcon } from "../../../assets/icons/svg/ToolsIcon";
 
 export const Menu = () => {
   return (
@@ -16,9 +16,7 @@ export const Menu = () => {
           <div className={`${styles.menu_button} {styles.menu_button_profile}`}>
             <ProfileIcon />
           </div>
-          <div className={styles.menu_page_title}>
-            Джерела України 
-          </div>
+          <div className={styles.menu_page_title}>Джерела України</div>
           <div className={`${styles.menu_button} {styles.menu_button_chat}`}>
             <ChatIcon />
           </div>

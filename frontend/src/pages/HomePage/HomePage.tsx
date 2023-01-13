@@ -1,7 +1,7 @@
 import React from "react";
-import { Menu } from "../components/Menu/Menu";
-import { Maps } from "../components/Maps/Maps";
-import styles from './HomePage.module.scss';
+import { Menu } from "../../components/Layout/Menu/Menu";
+import { Maps } from "../../components/Maps/Maps";
+import styles from "./HomePage.module.scss";
 
 export const HomePage = () => {
   return (

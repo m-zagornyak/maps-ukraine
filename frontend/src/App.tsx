@@ -1,10 +1,26 @@
-import React from 'react'
-import { HomePage } from './pages/HomePage'
+import React from "react";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { AuthPage } from "./pages/AuthPage/AuthPage";
+import { HomePage } from "./pages/HomePage/HomePage"
+import { Menu } from "./components/Layout/Menu/Menu"
+import { ROUTES } from "./utils/constants/routes";
 
-export const  App = () => {
+
+export const AuthApp = () => (
+  <Routes>
+    <Route path={ROUTES.AUTH} element={<AuthPage />} />
+    <Route path='*' element={<Navigate to={ROUTES.AUTH} />} />
+  </Routes>
+);
+
+export const App = () => {
   return (
-      <HomePage />
+    <BrowserRouter>
+      <Routes>
+        <Route path={ROUTES.HOME} element={<HomePage />} />
+        <Route path={ROUTES.AUTH} element={<AuthPage />} />
+      </Routes>
+    </BrowserRouter>
   )
-}
-
-
+};
+export default App

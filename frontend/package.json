@@ -11,10 +11,12 @@
   "dependencies": {
     "@amcharts/amcharts5": "^5.2.47",
     "@amcharts/amcharts5-geodata": "^5.1.0",
+    "@types/react-router-dom": "^5.3.3",
     "axios": "^1.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.2",
     "sass": "^1.57.1"
   },
   "devDependencies": {
