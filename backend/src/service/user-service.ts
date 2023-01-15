@@ -14,6 +14,7 @@ export class UserService {
         const activationLink = uuid.v4();
         const user = await UserModel.create({email, password: hashPassword, activationLink});
         await mailService.sendActivationMail(email, activationLink);
+        const tokens = tokenService.generateTokens();
     }
 }
 
