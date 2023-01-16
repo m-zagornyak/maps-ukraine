@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+
 import { AuthPage } from "./pages/AuthPage/AuthPage";
 import { HomePage } from "./pages/HomePage/HomePage"
-import { Menu } from "./components/Layout/Menu/Menu"
 import { ROUTES } from "./utils/constants/routes";
 
 

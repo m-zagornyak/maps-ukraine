@@ -4,7 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import router from './router/routers';
-import { PORT, MONGO } from "./config/config";
+import {MONGO, PORT} from "./config/config";
 
 const app = express();
 
@@ -15,10 +15,7 @@ app.use('/api', router);
 
 const start = async () => {
   try {
-    await mongoose.connect(MONGO, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(MONGO);
     app.listen(PORT, () => {
       console.log("server run");
     });

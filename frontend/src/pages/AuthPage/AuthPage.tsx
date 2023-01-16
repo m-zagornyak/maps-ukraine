@@ -1,11 +1,12 @@
 import React from 'react'
 import { CreateAccount } from '../../components/Layout/Button/ButtonAuth/CreateAccount'
+import {AuthForm} from "../../components/Auth/AuthForm";
 
 export const AuthPage = () => {
 	return (
 		<div>
-			<h1>AuthPage works!</h1>
-			<CreateAccount />
+			<AuthForm />
+
 		</div>
 	)
 }
